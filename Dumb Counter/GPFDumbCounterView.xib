@@ -16,9 +16,10 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbC-9s-BHj">
-                    <rect key="frame" x="20" y="109" width="30" height="30"/>
+                <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbC-9s-BHj">
+                    <rect key="frame" x="20" y="76" width="30" height="84"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
                     <state key="normal" title="-">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -26,9 +27,10 @@
                         <action selector="decrementButtonPressed:" destination="-1" eventType="touchUpInside" id="p5B-uo-oHh"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eev-WN-vev">
-                    <rect key="frame" x="270" y="105" width="30" height="30"/>
+                <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eev-WN-vev">
+                    <rect key="frame" x="264" y="76" width="36" height="84"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
                     <state key="normal" title="+">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -36,22 +38,23 @@
                         <action selector="incrementButtonPressed:" destination="-1" eventType="touchUpInside" id="dgJ-hO-I5b"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHq-05-kWb">
-                    <rect key="frame" x="139" y="109" width="42" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHq-05-kWb">
+                    <rect key="frame" x="146" y="91" width="28" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-IL-tOW">
-                    <rect key="frame" x="139" y="458" width="42" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-IL-tOW">
+                    <rect key="frame" x="146" y="416" width="28" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlf-w7-hka">
-                    <rect key="frame" x="145" y="269" width="30" height="30"/>
+                    <rect key="frame" x="130" y="242" width="60" height="84"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Add">
+                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                    <state key="normal" title="↓">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -61,8 +64,18 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="qlf-w7-hka" secondAttribute="centerX" id="Cfm-le-j4O"/>
-                <constraint firstAttribute="centerY" secondItem="qlf-w7-hka" secondAttribute="centerY" id="rjy-Hk-Nsz"/>
+                <constraint firstAttribute="centerX" secondItem="rHq-05-kWb" secondAttribute="centerX" id="6zh-IS-Vzn"/>
+                <constraint firstAttribute="centerY" secondItem="qlf-w7-hka" secondAttribute="centerY" id="7RY-p6-wWh"/>
+                <constraint firstAttribute="centerX" secondItem="IM6-IL-tOW" secondAttribute="centerX" id="Alb-ur-jJm"/>
+                <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="IM6-IL-tOW" secondAttribute="bottom" constant="92" id="DLg-e7-PRA"/>
+                <constraint firstItem="BbC-9s-BHj" firstAttribute="baseline" secondItem="rHq-05-kWb" secondAttribute="baseline" id="FHd-Ye-sFt"/>
+                <constraint firstItem="BbC-9s-BHj" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="STc-aN-zKF"/>
+                <constraint firstAttribute="centerX" secondItem="qlf-w7-hka" secondAttribute="centerX" id="Vln-Hq-dXd"/>
+                <constraint firstItem="rHq-05-kWb" firstAttribute="top" relation="lessThanOrEqual" secondItem="1" secondAttribute="top" constant="91" id="XdX-hy-fPY"/>
+                <constraint firstItem="rHq-05-kWb" firstAttribute="baseline" secondItem="eev-WN-vev" secondAttribute="baseline" id="Y5J-uH-9JX"/>
+                <constraint firstItem="qlf-w7-hka" firstAttribute="top" relation="lessThanOrEqual" secondItem="rHq-05-kWb" secondAttribute="bottom" constant="91" id="rSo-Hy-qH8"/>
+                <constraint firstAttribute="trailing" secondItem="eev-WN-vev" secondAttribute="trailing" constant="20" id="yOi-oT-I8g"/>
+                <constraint firstItem="IM6-IL-tOW" firstAttribute="top" relation="lessThanOrEqual" secondItem="qlf-w7-hka" secondAttribute="bottom" constant="90" id="ywE-zh-yqh"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
