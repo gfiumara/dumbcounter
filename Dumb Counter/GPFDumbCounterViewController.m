@@ -49,7 +49,7 @@
 	[self updateCounterDisplay];
 }
 
-- (IBAction)addButton:(UIButton *)sender
+- (IBAction)addButtonPressed:(UIButton *)sender
 {
 	self.totalValue += self.incrementValue;
 	[self updateCounterDisplay];

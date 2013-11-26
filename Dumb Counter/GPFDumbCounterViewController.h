@@ -18,6 +18,6 @@
 
 - (IBAction)decrementButtonPressed:(UIButton *)sender;
 - (IBAction)incrementButtonPressed:(UIButton *)sender;
-- (IBAction)addButton:(UIButton *)sender;
+- (IBAction)addButtonPressed:(UIButton *)sender;
 
 @end
