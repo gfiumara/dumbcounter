@@ -17,8 +17,6 @@
 		08A456721844DAC10041C7AF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A456711844DAC10041C7AF /* XCTest.framework */; };
 		08A456731844DAC10041C7AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A456581844DAC10041C7AF /* Foundation.framework */; };
 		08A456741844DAC10041C7AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A4565C1844DAC10041C7AF /* UIKit.framework */; };
-		08A4567C1844DAC10041C7AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08A4567A1844DAC10041C7AF /* InfoPlist.strings */; };
-		08A4567E1844DAC10041C7AF /* Dumb_CounterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A4567D1844DAC10041C7AF /* Dumb_CounterTests.m */; };
 		08A456881844DADD0041C7AF /* GPFDumbCounterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A456871844DADD0041C7AF /* GPFDumbCounterView.xib */; };
 		08A4568B1844DAEA0041C7AF /* GPFDumbCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A4568A1844DAEA0041C7AF /* GPFDumbCounterViewController.m */; };
 /* End PBXBuildFile section */
@@ -47,9 +45,6 @@
 		08A4566A1844DAC10041C7AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		08A456701844DAC10041C7AF /* Dumb CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dumb CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A456711844DAC10041C7AF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		08A456791844DAC10041C7AF /* Dumb CounterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dumb CounterTests-Info.plist"; sourceTree = "<group>"; };
-		08A4567B1844DAC10041C7AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		08A4567D1844DAC10041C7AF /* Dumb_CounterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dumb_CounterTests.m; sourceTree = "<group>"; };
 		08A456871844DADD0041C7AF /* GPFDumbCounterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPFDumbCounterView.xib; sourceTree = "<group>"; };
 		08A456891844DAEA0041C7AF /* GPFDumbCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFDumbCounterViewController.h; sourceTree = "<group>"; };
 		08A4568A1844DAEA0041C7AF /* GPFDumbCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFDumbCounterViewController.m; sourceTree = "<group>"; };
@@ -83,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				08A4565E1844DAC10041C7AF /* Dumb Counter */,
-				08A456771844DAC10041C7AF /* Dumb CounterTests */,
 				08A456571844DAC10041C7AF /* Frameworks */,
 				08A456561844DAC10041C7AF /* Products */,
 			);
@@ -130,24 +124,6 @@
 				08A456611844DAC10041C7AF /* InfoPlist.strings */,
 				08A456641844DAC10041C7AF /* main.m */,
 				08A456661844DAC10041C7AF /* Dumb Counter-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		08A456771844DAC10041C7AF /* Dumb CounterTests */ = {
-			isa = PBXGroup;
-			children = (
-				08A4567D1844DAC10041C7AF /* Dumb_CounterTests.m */,
-				08A456781844DAC10041C7AF /* Supporting Files */,
-			);
-			path = "Dumb CounterTests";
-			sourceTree = "<group>";
-		};
-		08A456781844DAC10041C7AF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				08A456791844DAC10041C7AF /* Dumb CounterTests-Info.plist */,
-				08A4567A1844DAC10041C7AF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -238,7 +214,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08A4567C1844DAC10041C7AF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +234,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08A4567E1844DAC10041C7AF /* Dumb_CounterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,14 +252,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				08A456621844DAC10041C7AF /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		08A4567A1844DAC10041C7AF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				08A4567B1844DAC10041C7AF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -452,6 +418,7 @@
 				08A456831844DAC10041C7AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08A456841844DAC10041C7AF /* Build configuration list for PBXNativeTarget "Dumb CounterTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +427,7 @@
 				08A456861844DAC10041C7AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
