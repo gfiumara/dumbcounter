@@ -19,6 +19,8 @@
 		08A456741844DAC10041C7AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A4565C1844DAC10041C7AF /* UIKit.framework */; };
 		08A4567C1844DAC10041C7AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08A4567A1844DAC10041C7AF /* InfoPlist.strings */; };
 		08A4567E1844DAC10041C7AF /* Dumb_CounterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A4567D1844DAC10041C7AF /* Dumb_CounterTests.m */; };
+		08A456881844DADD0041C7AF /* GPFDumbCounterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A456871844DADD0041C7AF /* GPFDumbCounterView.xib */; };
+		08A4568B1844DAEA0041C7AF /* GPFDumbCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A4568A1844DAEA0041C7AF /* GPFDumbCounterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		08A456791844DAC10041C7AF /* Dumb CounterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dumb CounterTests-Info.plist"; sourceTree = "<group>"; };
 		08A4567B1844DAC10041C7AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		08A4567D1844DAC10041C7AF /* Dumb_CounterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dumb_CounterTests.m; sourceTree = "<group>"; };
+		08A456871844DADD0041C7AF /* GPFDumbCounterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPFDumbCounterView.xib; sourceTree = "<group>"; };
+		08A456891844DAEA0041C7AF /* GPFDumbCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFDumbCounterViewController.h; sourceTree = "<group>"; };
+		08A4568A1844DAEA0041C7AF /* GPFDumbCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFDumbCounterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,9 @@
 				08A456671844DAC10041C7AF /* GPFAppDelegate.h */,
 				08A456681844DAC10041C7AF /* GPFAppDelegate.m */,
 				08A4566A1844DAC10041C7AF /* Images.xcassets */,
+				08A456871844DADD0041C7AF /* GPFDumbCounterView.xib */,
+				08A456891844DAEA0041C7AF /* GPFDumbCounterViewController.h */,
+				08A4568A1844DAEA0041C7AF /* GPFDumbCounterViewController.m */,
 				08A4565F1844DAC10041C7AF /* Supporting Files */,
 			);
 			path = "Dumb Counter";
@@ -221,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A456631844DAC10041C7AF /* InfoPlist.strings in Resources */,
+				08A456881844DADD0041C7AF /* GPFDumbCounterView.xib in Resources */,
 				08A4566B1844DAC10041C7AF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A456691844DAC10041C7AF /* GPFAppDelegate.m in Sources */,
+				08A4568B1844DAEA0041C7AF /* GPFDumbCounterViewController.m in Sources */,
 				08A456651844DAC10041C7AF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
