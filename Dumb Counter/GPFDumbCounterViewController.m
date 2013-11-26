@@ -17,7 +17,7 @@
 
 @implementation GPFDumbCounterViewController
 
-#pragma mark - View 
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad
 {
@@ -26,6 +26,11 @@
 	self.incrementValue = 0;
 	self.totalValue = 0;
 
+	[self updateCounterDisplay];
+}
+
+- (void)updateCounterDisplay
+{
 	self.incrementLabel.text = [@(self.incrementValue) stringValue];
 	self.totalLabel.text = [@(self.totalValue) stringValue];
 }
@@ -35,19 +40,36 @@
 - (IBAction)decrementButtonPressed:(UIButton *)sender
 {
 	self.incrementValue -= 1;
-	self.incrementLabel.text = [@(self.incrementValue) stringValue];
+	[self updateCounterDisplay];
 }
 
 - (IBAction)incrementButtonPressed:(UIButton *)sender
 {
 	self.incrementValue += 1;
-	self.incrementLabel.text = [@(self.incrementValue) stringValue];
+	[self updateCounterDisplay];
 }
 
 - (IBAction)addButton:(UIButton *)sender
 {
 	self.totalValue += self.incrementValue;
-	self.totalLabel.text = [@(self.totalValue) stringValue];
+	[self updateCounterDisplay];
+}
+
+#pragma mark - Shake Recognition
+
+- (BOOL)canBecomeFirstResponder
+{
+	return (YES);
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+	if (motion == UIEventSubtypeMotionShake) {
+		self.incrementValue = 0;
+		self.totalValue = 0;
+
+		[self updateCounterDisplay];
+	}
 }
 
 @end
