@@ -23,10 +23,16 @@
 {
 	[super viewDidLoad];
 
+	[self resetCounterValues];
+	[self updateCounterDisplay];
+}
+
+#pragma mark - Math
+
+- (void)resetCounterValues
+{
 	self.incrementValue = 0;
 	self.totalValue = 0;
-
-	[self updateCounterDisplay];
 }
 
 - (void)updateCounterDisplay
@@ -65,9 +71,7 @@
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
 	if (motion == UIEventSubtypeMotionShake) {
-		self.incrementValue = 0;
-		self.totalValue = 0;
-
+		[self resetCounterValues];
 		[self updateCounterDisplay];
 	}
 }
