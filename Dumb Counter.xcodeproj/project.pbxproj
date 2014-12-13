@@ -14,22 +14,9 @@
 		08A456651844DAC10041C7AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A456641844DAC10041C7AF /* main.m */; };
 		08A456691844DAC10041C7AF /* GPFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A456681844DAC10041C7AF /* GPFAppDelegate.m */; };
 		08A4566B1844DAC10041C7AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A4566A1844DAC10041C7AF /* Images.xcassets */; };
-		08A456721844DAC10041C7AF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A456711844DAC10041C7AF /* XCTest.framework */; };
-		08A456731844DAC10041C7AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A456581844DAC10041C7AF /* Foundation.framework */; };
-		08A456741844DAC10041C7AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A4565C1844DAC10041C7AF /* UIKit.framework */; };
 		08A456881844DADD0041C7AF /* GPFDumbCounterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A456871844DADD0041C7AF /* GPFDumbCounterView.xib */; };
 		08A4568B1844DAEA0041C7AF /* GPFDumbCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A4568A1844DAEA0041C7AF /* GPFDumbCounterViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		08A456751844DAC10041C7AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08A4564D1844DAC10041C7AF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 08A456541844DAC10041C7AF;
-			remoteInfo = "Dumb Counter";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		08A456551844DAC10041C7AF /* Dumb Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dumb Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +30,6 @@
 		08A456671844DAC10041C7AF /* GPFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPFAppDelegate.h; sourceTree = "<group>"; };
 		08A456681844DAC10041C7AF /* GPFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPFAppDelegate.m; sourceTree = "<group>"; };
 		08A4566A1844DAC10041C7AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		08A456701844DAC10041C7AF /* Dumb CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dumb CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		08A456711844DAC10041C7AF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		08A456871844DADD0041C7AF /* GPFDumbCounterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPFDumbCounterView.xib; sourceTree = "<group>"; };
 		08A456891844DAEA0041C7AF /* GPFDumbCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPFDumbCounterViewController.h; sourceTree = "<group>"; };
 		08A4568A1844DAEA0041C7AF /* GPFDumbCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPFDumbCounterViewController.m; sourceTree = "<group>"; };
@@ -58,16 +43,6 @@
 				08A4565B1844DAC10041C7AF /* CoreGraphics.framework in Frameworks */,
 				08A4565D1844DAC10041C7AF /* UIKit.framework in Frameworks */,
 				08A456591844DAC10041C7AF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		08A4566D1844DAC10041C7AF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08A456721844DAC10041C7AF /* XCTest.framework in Frameworks */,
-				08A456741844DAC10041C7AF /* UIKit.framework in Frameworks */,
-				08A456731844DAC10041C7AF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				08A456551844DAC10041C7AF /* Dumb Counter.app */,
-				08A456701844DAC10041C7AF /* Dumb CounterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +72,6 @@
 				08A456581844DAC10041C7AF /* Foundation.framework */,
 				08A4565A1844DAC10041C7AF /* CoreGraphics.framework */,
 				08A4565C1844DAC10041C7AF /* UIKit.framework */,
-				08A456711844DAC10041C7AF /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,24 +121,6 @@
 			productReference = 08A456551844DAC10041C7AF /* Dumb Counter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		08A4566F1844DAC10041C7AF /* Dumb CounterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 08A456841844DAC10041C7AF /* Build configuration list for PBXNativeTarget "Dumb CounterTests" */;
-			buildPhases = (
-				08A4566C1844DAC10041C7AF /* Sources */,
-				08A4566D1844DAC10041C7AF /* Frameworks */,
-				08A4566E1844DAC10041C7AF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				08A456761844DAC10041C7AF /* PBXTargetDependency */,
-			);
-			name = "Dumb CounterTests";
-			productName = "Dumb CounterTests";
-			productReference = 08A456701844DAC10041C7AF /* Dumb CounterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,13 +128,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = GPF;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Greg Fiumara";
-				TargetAttributes = {
-					08A4566F1844DAC10041C7AF = {
-						TestTargetID = 08A456541844DAC10041C7AF;
-					};
-				};
 			};
 			buildConfigurationList = 08A456501844DAC10041C7AF /* Build configuration list for PBXProject "Dumb Counter" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -194,7 +144,6 @@
 			projectRoot = "";
 			targets = (
 				08A456541844DAC10041C7AF /* Dumb Counter */,
-				08A4566F1844DAC10041C7AF /* Dumb CounterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,13 +156,6 @@
 				08A456631844DAC10041C7AF /* InfoPlist.strings in Resources */,
 				08A456881844DADD0041C7AF /* GPFDumbCounterView.xib in Resources */,
 				08A4566B1844DAC10041C7AF /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		08A4566E1844DAC10041C7AF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,22 +172,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08A4566C1844DAC10041C7AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		08A456761844DAC10041C7AF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 08A456541844DAC10041C7AF /* Dumb Counter */;
-			targetProxy = 08A456751844DAC10041C7AF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		08A456611844DAC10041C7AF /* InfoPlist.strings */ = {
@@ -263,7 +190,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -302,7 +228,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -357,48 +282,6 @@
 			};
 			name = Release;
 		};
-		08A456851844DAC10041C7AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dumb Counter.app/Dumb Counter";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Dumb Counter/Dumb Counter-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Dumb CounterTests/Dumb CounterTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		08A456861844DAC10041C7AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dumb Counter.app/Dumb Counter";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Dumb Counter/Dumb Counter-Prefix.pch";
-				INFOPLIST_FILE = "Dumb CounterTests/Dumb CounterTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,15 +299,6 @@
 			buildConfigurations = (
 				08A456821844DAC10041C7AF /* Debug */,
 				08A456831844DAC10041C7AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		08A456841844DAC10041C7AF /* Build configuration list for PBXNativeTarget "Dumb CounterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				08A456851844DAC10041C7AF /* Debug */,
-				08A456861844DAC10041C7AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
