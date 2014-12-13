@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081714EB1A3CE74900FE94C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 081714EA1A3CE74900FE94C5 /* LaunchScreen.xib */; };
 		08A456591844DAC10041C7AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A456581844DAC10041C7AF /* Foundation.framework */; };
 		08A4565B1844DAC10041C7AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A4565A1844DAC10041C7AF /* CoreGraphics.framework */; };
 		08A4565D1844DAC10041C7AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A4565C1844DAC10041C7AF /* UIKit.framework */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		081714EA1A3CE74900FE94C5 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = "Dumb Counter/LaunchScreen.xib"; sourceTree = "<group>"; };
 		08A456551844DAC10041C7AF /* Dumb Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dumb Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A456581844DAC10041C7AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		08A4565A1844DAC10041C7AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,6 +54,7 @@
 		08A4564C1844DAC10041C7AF = {
 			isa = PBXGroup;
 			children = (
+				081714EA1A3CE74900FE94C5 /* LaunchScreen.xib */,
 				08A4565E1844DAC10041C7AF /* Dumb Counter */,
 				08A456571844DAC10041C7AF /* Frameworks */,
 				08A456561844DAC10041C7AF /* Products */,
@@ -153,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				081714EB1A3CE74900FE94C5 /* LaunchScreen.xib in Resources */,
 				08A456631844DAC10041C7AF /* InfoPlist.strings in Resources */,
 				08A456881844DADD0041C7AF /* GPFDumbCounterView.xib in Resources */,
 				08A4566B1844DAC10041C7AF /* Images.xcassets in Resources */,
@@ -218,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -250,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -260,10 +264,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dumb Counter/Dumb Counter-Prefix.pch";
 				INFOPLIST_FILE = "Dumb Counter/Dumb Counter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -273,10 +277,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dumb Counter/Dumb Counter-Prefix.pch";
 				INFOPLIST_FILE = "Dumb Counter/Dumb Counter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
